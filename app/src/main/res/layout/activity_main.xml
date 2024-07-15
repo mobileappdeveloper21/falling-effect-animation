@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <com.myapplication.customView.snow.SnowfallView
+        android:id="@+id/customeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakesNum="100"
+        app:snowflakeAlphaMin="150"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAngleMax="5"
+        app:snowflakeSizeMin="8dp"
+        app:snowflakeSizeMax="22dp"
+        app:snowflakeSpeedMin="2"
+        app:snowflakeSpeedMax="1"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesAlreadyFalling="false"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/snowBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:text="Snow"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/baseline_circle"
+                android:src="@drawable/snowflake"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SnowFall"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/rainbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:text="Snow"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/baseline_circle"
+                android:src="@drawable/tear"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:rotation="30"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rain"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/congratulationBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:text="Snow"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/baseline_circle"
+                android:src="@drawable/confetti_icon"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Party"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/emojiBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/baseline_circle"
+                android:src="@drawable/smile"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emoji"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/moreBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/baseline_circle"
+                android:src="@drawable/baseline_more"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                app:tint="@color/confetti_color2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

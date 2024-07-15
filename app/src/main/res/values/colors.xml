@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="confetti_color1">#BC0101</color>
+    <color name="confetti_color2">#0A90CD</color>
+    <color name="confetti_color3">#A4B30F</color>
+    <color name="colorBg">#F7685F</color>
+</resources>

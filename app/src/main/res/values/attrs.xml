@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParticleView">
+        <attr name="particleCount" format="integer" />
+        <attr name="particleMinRadius" format="integer" />
+        <attr name="particleMaxRadius" format="integer" />
+        <attr name="particlesBackgroundColor" format="color" />
+        <attr name="particleColor" format="color" />
+        <attr name="particleLineColor" format="color" />
+        <attr name="particleLinesEnabled" format="boolean" />
+    </declare-styleable>
+
+    <attr name="ParticleViewStyle" format="reference" />
+
+    <declare-styleable name="SnowView">
+        <attr name="snowCount" format="integer"/>
+        <attr name="snowDropDownSpeed" format="integer"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+    <attr name="SnowViewStyle" format="reference"/>
+
+    <declare-styleable name="SnowfallView">
+        <attr name="snowflakesNum" format="integer"/>
+        <attr name="snowflakeImage" format="reference"/>
+        <attr name="snowflakeAlphaMin" format="integer"/>
+        <attr name="snowflakeAlphaMax" format="integer"/>
+        <attr name="snowflakeAngleMax" format="integer"/>
+        <attr name="snowflakeSizeMin" format="dimension"/>
+        <attr name="snowflakeSizeMax" format="dimension"/>
+        <attr name="snowflakeSpeedMin" format="integer"/>
+        <attr name="snowflakeSpeedMax" format="integer"/>
+        <attr name="snowflakesFadingEnabled" format="boolean"/>
+        <attr name="snowflakesAlreadyFalling" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ConfettiView">
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_edger_bg"
+    android:padding="10dp"
+    android:layout_marginHorizontal="50dp">
+
+    <TextView
+        android:id="@+id/optionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Enter Text"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+
+    <EditText
+        android:id="@+id/enterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/optionTV"
+        app:layout_constraintStart_toStartOf="@+id/optionTV"
+        app:layout_constraintEnd_toEndOf="@+id/optionTV"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/line_border_bg"
+        android:paddingVertical="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/showBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterText"
+        app:layout_constraintStart_toStartOf="@+id/enterText"
+        app:layout_constraintEnd_toEndOf="@+id/enterText"
+        android:background="@drawable/side_roude_btn"
+        android:layout_marginTop="20dp"
+        android:text="Show"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
